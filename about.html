@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
@@ -9,20 +8,9 @@
         body {
             background-color: lightblue;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             text-align: center;
             transition: background-color 0.5s ease;
         }
-        header {
-            background-color: #ff6699;
-            padding: 15px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
         }
         section {
             max-width: 600px;
@@ -37,7 +25,6 @@
             color: blue;
         }
         button {
-            background-color: #008CBA;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -71,8 +58,6 @@
     </section>
 
     <script>
-        function changeBackground() {
-            const colors = ["lightblue", "#ffcccb", "#d1c4e9", "#c8e6c9", "#fff59d"];
             document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         }
     </script>
