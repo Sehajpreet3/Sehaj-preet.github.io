@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            transition: background-color 0.5s ease;
         }
         header {
             background-color: #ff6699;
@@ -35,6 +36,18 @@
             font-weight: bold;
             color: blue;
         }
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #005f73;
+        }
     </style>
 </head>
 <body>
@@ -49,10 +62,19 @@
 
     <section>
         <h2>Hobbies & Interests</h2>
-        <p>I enjoy <span>boxing, playing games,traveling, cooking and want to have a puppy as in India I had one. </span>.</p>
+        <p>I enjoy <span>boxing, playing games, traveling, cooking, and want to have a puppy as in India I had one.</span></p>
         
         <h2>Education</h2>
         <p>Currently in Grade 10 at Khalsa Secondary School.</p>
+
+        <button onclick="changeBackground()">Change Background</button>
     </section>
+
+    <script>
+        function changeBackground() {
+            const colors = ["lightblue", "#ffcccb", "#d1c4e9", "#c8e6c9", "#fff59d"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
 </body>
 </html>
