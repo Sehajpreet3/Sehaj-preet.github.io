@@ -1,0 +1,41 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+    }
+    a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    section {
+        background: white;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    button {
+        background-color: #008CBA;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    button:hover {
+        background-color: #005f73;
+    }
+</style>
